@@ -6,12 +6,44 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
         <script type="text/javascript" src="js/selectores.js"></script>
+        <style>
+            .zebra{
+                border: 5px dashed black;
+            }
+            .grande{
+                font-size: 30px;
+            }
+            .margen-superior {
+                display: block;
+                margin-top: 45px;
+            }
+            .result {
+                border-bottom: 2px solid brown;
+            }
+        </style>
     </head>
     <body>
         <h1>Jquery</h1>
-        <p id="rojo">jer jquery</p>
+
+        <ul>
+            <li><a href="https://www.google.com" title="Google">Ir a Google</a></li>
+            <li><a href="https://www.facebook.com" title="Facebook">Ir a Facebook</a></li>
+        </ul>
+
+        <p id="rojo" class="sinBorder">jer jquery</p>
         <p id="amarillo" class="zebra">pract con select</p>
-        <p id="verde">pasar a verde</p>
+        <p id="verde" class="sinBorder">pasar a verde</p>
         <p class="zebra">parrafo</p>
+
+        <div id="caja">
+            <p>Caja</p>
+            <ul>
+                <li>Elemento 1</li>
+                <li id="elemento2">Elemento 2</li>
+            </ul>
+            <span class="result">span</span>
+        </div>
+
+
     </body>
 </html>
